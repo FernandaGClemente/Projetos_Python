@@ -25,8 +25,8 @@ login_manager.login_message_category = 'alert-info'
 from ComunidadeDataAnalyst import models  # noqa: E402
 
 engine = sqlalchemy.create_engine(app.config['SQLALCHEMY_DATABASE_URI'])
-
-if not engine.has_table("usuario"):
+insp = sqlalchemy.inspect(engine)
+if not insp.has_table("usuario"):
     with app.app_context():
         database.drop_all()
         database.create_all()
