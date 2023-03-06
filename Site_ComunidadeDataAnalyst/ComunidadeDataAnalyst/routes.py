@@ -61,7 +61,7 @@ def login():
 
     if form_cadastroconta.validate_on_submit() and 'botao_enviar_cadastro_conta' in request.form:
         # Criptografia da senha
-        senha_cript = bcrypt.generate_password_hash(form_cadastroconta.senha.data)
+        senha_cript = bcrypt.generate_password_hash(form_cadastroconta.senha.data).decode("utf-8")
         # Criar a conta do usuário
         usuario = Usuario(username=form_cadastroconta.username.data,
                           email=form_cadastroconta.email.data,
