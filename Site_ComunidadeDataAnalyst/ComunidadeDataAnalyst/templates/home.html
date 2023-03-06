@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <div class="container mt-3">
+        <h1 style="color: blue">First website in Flask!</h1>
+        <h2 style="color: green">Primeiro site em Flask!</h2>
+        <br>
+        <hr>
+        <h3>This is a project with the objective of showing Python skills using the WEB Development libraries in the creation of a fictitious community of data analysts.</h3>
+        <p>Este é um projeto com objetivo de mostrar as habilidades em Python utilizando as bibliotecas de Desenvolvimento WEB na criação de uma comunidade fictícia de analistas de dados.</p>
+        <hr>
+        <br>
+        {% for post in posts %}
+        <div class="row border mt-4 p-3 mypost">
+
+            <div class="col col-2">
+                <div class="image pe-2">
+                    <img src="{{url_for('static', filename = 'fotos_perfil/{}'.format(post.autor.foto_perfil))}}" class="rounded" width="200" >
+                </div>
+                   <strong class="row justify-content-center">{{post.autor.username}}</strong>
+                <div class="row justify-content-center">
+                        {% for cursos in post.autor.cursos.split(';') %}
+                            <button type="button" class="btn btn-success mt-2" disabled>{{cursos}}</button>
+                        {% endfor %}
+                </div>
+
+            </div>
+
+            <div class="col col-9">
+                <a style="text-decoration: none" href="{{url_for('exibir_post', post_id=post.id)}}">
+                    <h3>{{post.titulo}}</h3>
+                </a>
+                <p>{{post.corpo}}</p>
+            </div>
+
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
