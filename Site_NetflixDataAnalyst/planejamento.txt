@@ -1,0 +1,19 @@
+1 — Página Homepage (Pagina inicial)
+2 — Página da Barra de navegação
+3 — Página de Login, Página de Logout e Página de Criar conta (Usuario e Autenticação)
+    > Email
+    > Username
+    > Senha e confirmação de senha
+    > Filmes vistos
+4 — Página de Editar perfil
+5 — Página de Filmes (Excel, Python, SQL, R, Power BI, Tableau, Google Data Studio, Data Storytelling e Cloud)
+    > Thumb (Imagem)
+    > Título
+    > Descrição
+    > Categoria (Análises, Programação, Apresentação e Outros)
+    > Quantidade de views
+    > Data de criação (Publicação)
+    > Página dos Episódios
+        * Vídeos (Link do vídeo do YouTube)
+        * Títulos dos episódios
+6 — Página de Barra de Pesquisa
