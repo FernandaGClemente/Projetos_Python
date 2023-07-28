@@ -1,0 +1,28 @@
+Pré requisitos:
+1 - Criação de um repositório no GitHub (Projeto_CancelamentoDeClientes)
+2 - Criação da pasta _datasets onde ficará o conjunto de dados que será utilizado no projeto (Arquivo importado: cancelamentos.csv)
+3 - Criação da pasta _imagens onde ficará as imagens que serão utilizadas no projeto 
+4 - Criação da pasta _notebooks onde ficará o arquivo.ipynb
+5 - Criação do ambiente virtual (Projeto_CancelamentoDeClientes)
+6 - Instalação das bibliotecas que serão utilizadas no prompt (pip install pandas)
+7 - Criação do arquivo requirements.txt
+8 - 
+
+Decomposição do problema:
+1 - Obter os dados (Seleção de dados)
+2 - Verificar a integridade dos dados (Integração de dados - Dados ausentes, inconsistências ou erros)
+3 - Limpar os dados (Pode incluir preenchimento de valores ausentes, correção de erros e remoção de duplicatas.)
+4 - Explorar as variáveis (Explorar a distribuição das variáveis, variabilidade e relações entre elas, pode ser feito por meio de tabelas de frequência, gráficos de barras e dispersão)
+5 - Identificar padrões e tendências (Analisar as variáveis e procurar por padrões e tendências. Utilização dos tipos de análises)
+6 - Visualizar os dados (Ajuda a comunicar os padrões e tendências identificados - representação do conhecimento)
+7 - Transformação de dados (Sumarizar as principais conclusões da análise, destacando as descobertas mais importantes e sugerindo possíveis próximos passos)
+
+Produto Final:  (?)
+
+Ferramentas: 
+* IDE: Jupyter Notebook Markdown
+* Linguagem de Programação: Python 
+* Linguagem de Consulta: Não utilizará linguagem de consulta
+* Ferramentas Estatística: Python 
+* Visualização de dados: Python
+
